@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vx5-jL-f4e">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nav_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAh-lR-R3m">
+                                <rect key="frame" x="239" y="230" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="09P-Jl-rPc" kind="show" id="tmX-nF-h7S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91633768289999995" green="0.40117378879875215" blue="0.38947636480382875" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ebu-Zc-Xvi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="311"/>
+        </scene>
+        <!--YellowVC-->
+        <scene sceneID="F5v-br-Lks">
+            <objects>
+                <viewController id="09P-Jl-rPc" customClass="YellowVC" customModule="nav_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jzg-LH-5a8"/>
+                        <viewControllerLayoutGuide type="bottom" id="TTo-Ka-HpW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mgc-71-Xi4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iE8-fI-Mv2">
+                                <rect key="frame" x="168" y="245" width="184" height="30"/>
+                                <state key="normal" title="Lets check whats further!!!"/>
+                                <connections>
+                                    <segue destination="0ZS-3c-fCt" kind="show" id="CvF-wg-Qcm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-Za-907">
+                                <rect key="frame" x="228" y="383" width="112" height="30"/>
+                                <state key="normal" title="Horrrrrriblee...!!!"/>
+                                <connections>
+                                    <action selector="popVC:" destination="09P-Jl-rPc" eventType="touchUpInside" id="avl-Ho-sml"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90248260829735993" blue="0.3936590447276197" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1S-wh-CU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="1016"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nvb-6A-4xI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vx5-jL-f4e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xxd-Uv-odP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xE5-vr-Rvc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkJ-nd-drv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="971"/>
+        </scene>
+        <!--BlueVC-->
+        <scene sceneID="aA7-t6-keC">
+            <objects>
+                <viewController id="0ZS-3c-fCt" customClass="BlueVC" customModule="nav_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wrn-pk-eIv"/>
+                        <viewControllerLayoutGuide type="bottom" id="IzD-9j-NLW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LKJ-gr-0uT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqD-1S-ZIN">
+                                <rect key="frame" x="233" y="180" width="135" height="30"/>
+                                <state key="normal" title="Get Me to my home">
+                                    <color key="titleColor" red="0.95725167402086342" green="1" blue="0.9526552758843394" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="popToRoot:" destination="0ZS-3c-fCt" eventType="touchUpInside" id="5j1-hy-EWt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39343234968704188" green="0.79998003543453811" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzr-9Y-8Sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="1681"/>
+        </scene>
+    </scenes>
+</document>
